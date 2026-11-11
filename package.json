@@ -1,0 +1,66 @@
+{
+  "name": "megamenu",
+  "description": "Bootstrap mega menu with native javascript events support.",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/js/mega-menu.umd.js",
+  "module": "./dist/js/mega-menu.js",
+  "exports": {
+    ".": {
+      "import": "./dist/js/mega-menu.js",
+      "require": "./dist/js/mega-menu.umd.js",
+      "default": "./dist/js/mega-menu.js"
+    },
+    "./css": "./dist/css/mega-menu.min.css",
+    "./dist/css/mega-menu.min.css": "./dist/css/mega-menu.min.css"
+  },
+  "sideEffects": [
+    "./dist/js/mega-menu.js",
+    "./dist/js/mega-menu.umd.js",
+    "./dist/css/mega-menu.min.css"
+  ],
+  "style": "./dist/css/mega-menu.min.css",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "html",
+    "js",
+    "javascript",
+    "menu",
+    "mega",
+    "mega menu",
+    "megamenu",
+    "ui",
+    "front-end"
+  ],
+  "homepage": "https://github.com/jivtroy/mega-menu",
+  "author": "Jiv Troy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jivtroy/mega-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jivtroy/mega-menu/issues"
+  },
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://patreon.com"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vite-plugin-banner": "^0.8.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
